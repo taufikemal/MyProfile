@@ -94,27 +94,36 @@
             <div class="col m6 light">
               <p>Corel Draw</p>
                 <div class="progress">
-                  <div class="determinate" style="width: 85%"></div>
+                  <div class="determinate pink" style="width: 85%"></div>
                 </div>
 
                 <p>After Effects</p>
                 <div class="progress">
-                  <div class="determinate" style="width: 70%"></div>
+                  <div class="determinate pink" style="width: 70%"></div>
                 </div>
-
 
                 <p>Premiere Pro</p>
                 <div class="progress">
-                  <div class="determinate" style="width: 90%"></div>
+                  <div class="determinate pink" style="width: 90%"></div>
                 </div>
-
-
-
 
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Client Group-->
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/slider/menu-4.jpg"></div>
+      
+        <div class="container clients">
+          <h3 class="center light white-text">Our Clients</h3>
+
+          <div class="row">
+            <div class="col m4 certer"></div>
+          </div>
+        </div>
+      </div>
 
 
 
@@ -140,6 +149,10 @@
         transition: 600,
         interval: 3000
       });
+
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax);
     </script>
 
   </body>
