@@ -26,3 +26,7 @@ section, footer{
     padding-top: 22px;
 }
 
+footer p{
+    font-size: 100%;
+}
+

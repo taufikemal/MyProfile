@@ -17,23 +17,25 @@
     <title>Bangkems</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
     <!-- Navbar Menu -->
     <div class="navbar-fixed">
         <nav class="pink accent-3">
           <div class="container">
             <div class="nav-wrapper">
               <!-- Headbar -->
+              <a href="#home">
               <img src="img/head.png" width="120">
+              </a>
 
               <!-- Menu -->
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="">About Me</a></li>
-                <li><a href="">Clients</a></li>
-                <li><a href="">Skill</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#services">Skill</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -55,7 +57,7 @@
 
           <li>
             <img src="img/slider/menu-1.jpg"> <!-- random image -->
-            <div class="caption right-align">
+            <div class="caption left-align">
               <h3>This is our big Tagline!</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
@@ -63,7 +65,7 @@
 
           <li>
             <img src="img/slider/menu-2.jpg"> <!-- random image -->
-            <div class="caption left-align">
+            <div class="caption right-align">
               <h3>This is our big Tagline!</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
@@ -81,7 +83,7 @@
 
 
       <!-- About Us -->
-      <section id="about" class="about">
+      <section id="about" class="about scrollspy">
         <div class="container">
           <div class="row s12">
             <h3 class="center light grey-text text-darken-3">About Me</h3>
@@ -124,10 +126,10 @@
       </section>
 
       <!-- Client Group-->
-      <div class="parallax-container">
+      <div id="clients" class="parallax-container scrollspy">
         <div class="parallax"><img src="img/slider/3.png"></div>
       
-        <div class="container clients">
+        <div class="container clients ">
           <h3 class="center light white-text">Our Clients</h3>
 
           <div class="row">
@@ -150,7 +152,7 @@
       </div>
 
       <!-- Skills -->
-      <section id="services" class="services grey lighten-3">
+      <section id="services" class="services grey lighten-3 scrollspy">
         <div class="container">
 
           <div class="row">
@@ -212,7 +214,7 @@
       </section>
 
       <!-- Portfolio -->
-      <section id="portfolio" class="portfolio white lighten-3">
+      <section id="portfolio" class="portfolio white lighten-3 scrollspy">
         <div class="container">
           <h3 class="light center grey-text text-darken-3">Portfolio</h3>
           
@@ -259,7 +261,7 @@
       </section>
 
       <!-- Contact Me -->
-      <section id="contact" class="contact grey lighten-3">
+      <section id="contact" class="contact grey lighten-3 scrollspy">
         <div class="container">
           <h3 class="light grey-text text-darken-3 center">Contact Me</h3>
         
@@ -353,6 +355,11 @@
 
       const materialbox = document.querySelectorAll('.materialboxed');
       M.Materialbox.init(materialbox);
+
+      const scroll = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scroll, {
+        scrollOffset: 50
+      });
     </script>
 
   </body>
