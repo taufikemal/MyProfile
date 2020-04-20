@@ -47,7 +47,7 @@ footer p{
     margin: 20px;
     border-radius: 30%;
     box-shadow: 0 5px 15px -5px #000000;
-    color: #3498db;
+    color: #c51162;
     overflow: hidden;
     position: relative;
 }
@@ -69,7 +69,7 @@ footer p{
     position: absolute;
     width: 120%;
     height: 120%;
-    background: #3498db;
+    background: #c51162;
     transform: rotate(45deg);
     left: -110%;
     top: 90%;
